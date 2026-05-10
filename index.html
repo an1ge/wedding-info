@@ -40,14 +40,14 @@
   /* HEADER */
   .header {
     position: relative;
-    padding: 64px 48px 56px;
+    padding: 56px 48px 48px;
     overflow: hidden;
+    text-align: center;
   }
 
   .header-content {
     position: relative;
     z-index: 2;
-    max-width: 60%;
   }
 
   .eyebrow {
@@ -90,10 +90,11 @@
     user-select: none;
   }
 
-  .floral-tr {
-    top: -20px;
-    right: -30px;
-    width: 320px;
+  .floral-header-img {
+    display: block;
+    margin: 0 auto 28px;
+    width: 280px;
+    max-width: 70%;
     height: auto;
   }
 
@@ -352,10 +353,9 @@
 
   /* MOBILE */
   @media (max-width: 560px) {
-    .header { padding: 44px 28px 40px; }
-    .header-content { max-width: 75%; }
+    .header { padding: 40px 28px 36px; }
     .names { font-size: 46px; }
-    .floral-tr { width: 200px; top: -10px; right: -20px; }
+    .floral-header-img { width: 200px; }
     .content { padding: 16px 28px 20px; }
     .footer { padding: 36px 28px 44px; }
     .footer-floral-l { width: 130px; }
@@ -376,12 +376,12 @@
     <!-- ============ HEADER ============ -->
     <div class="header">
 
-      <!-- IMAGE SLOT: Top-right floral cluster (large) -->
-      <img class="floral floral-tr" src="images/floral-header.png" alt="" aria-hidden="true">
+      <!-- IMAGE SLOT: Centered floral above the title -->
+      <img class="floral-header-img" src="images/floral-header.png" alt="" aria-hidden="true">
 
       <div class="header-content">
         <div class="eyebrow">A note from the couple</div>
-        <h1 class="names">Isabel<br><span class="ampersand">&amp;</span> Andi</h1>
+        <h1 class="names">Andi <span class="ampersand">&amp;</span> Isabel</h1>
         <div class="date-line">Saturday · May 30 · 2026</div>
       </div>
     </div>
@@ -392,7 +392,7 @@
       <p class="greeting">Dear friends and family,</p>
 
       <p class="summary">
-        We can hardly believe how close our wedding weekend is, and we're so looking forward to celebrating with you at the Portage Inn. This page is a quick overview of what to expect &mdash; the full details are tucked into the questions below, so you can open whichever ones are useful to you.
+        We can hardly believe how close our wedding weekend is, and we're so looking forward to celebrating with you at the Portage Inn. This page is a quick overview of what to expect. The full details are tucked in the questions below, so you can open whichever ones are useful to you.
       </p>
 
       <p class="summary">
@@ -400,11 +400,11 @@
       </p>
 
       <div class="glance">
-        <h3>At a glance</h3>
+        <h3>Wedding timeline</h3>
         <ul>
           <li>
             <span class="when">Fri, May 29</span>
-            <span class="what">Friday-night guests arrive from <strong>4:00pm</strong></span>
+            <span class="what">Friday-night guests arrive after <strong>4:00pm</strong></span>
           </li>
           <li>
             <span class="when">Sat, May 30</span>
@@ -412,7 +412,7 @@
           </li>
           <li>
             <span class="when">Sat, May 30</span>
-            <span class="what">Day guests arrive by <strong>4:00pm</strong> &mdash; head straight to the plateau</span>
+            <span class="what">Day guests arrive by <strong>4:00pm</strong>. Please head straight to the plateau</span>
           </li>
           <li>
             <span class="when">Sat, May 30</span>
@@ -438,51 +438,49 @@
       <details>
         <summary>When should I arrive?</summary>
         <div class="answer">
-          <p><strong>If you're staying Friday night</strong> (close family and out-of-town guests &mdash; you know who you are): please arrive at the Portage Inn from <strong>4:00pm onward on Friday, May 29</strong>. We'll be settling in, having dinner together, and getting set up for the next day.</p>
+          <p><strong>If you're staying Friday night</strong> (close family and out-of-town guests. You know who you are): please arrive at the Portage Inn from <strong>4:00pm onward on Friday, May 29</strong>. We'll be getting set up for the wedding and having burgers for dinner.</p>
 
-          <p><strong>If you're staying Saturday night only:</strong> please plan to arrive at the Inn by <strong>2:00pm on Saturday, May 30</strong>. This gives you time to check into your room, settle in, and be ready before the ceremony.</p>
+          <p><strong>If you're staying Saturday night only:</strong> please plan to arrive at the Inn starting at <strong>2:00pm on Saturday, May 30</strong>. This gives you time to check into your room, settle in, and get ready before the ceremony.</p>
 
-          <p><strong>If you're not staying overnight at the Inn:</strong> please arrive by <strong>4:00pm on Saturday, May 30</strong> and head straight down to the plateau (see the question below) for the ceremony at 4:30pm.</p>
+          <p><strong>If you're not staying overnight at the Inn:</strong> please arrive at <strong>4:00pm on Saturday, May 30</strong> and head straight down to the plateau (see the question below) for the ceremony at 4:30pm.</p>
         </div>
       </details>
 
       <details>
         <summary>Where is the ceremony, exactly?</summary>
         <div class="answer">
-          <p>The ceremony will take place on <strong>the plateau</strong> &mdash; a flat grassy area on the Inn's grounds, just down the hill from the lake-side terrace. It's a short, easy walk from the main building (under five minutes).</p>
+          <p>The ceremony will take place on <strong>the plateau</strong>. This is a flat grassy area on the Inn's grounds, just down the hill from the terrace. It's a short, easy walk from the main building (under five minutes).</p>
 
-          <p>To get there from the Inn: walk through the Great Room out to the lake-side terrace, then follow the path down the hill. You'll see the plateau opening up below the terrace.</p>
+          <p>To get there from the Inn: walk to the lake-side terrace, then follow the path down the hill. You'll see the plateau opening up below the terrace.</p>
 
           <div class="callout">If the weather isn't cooperating, we'll move the ceremony to the terrace area near the patio. We'll let everyone know on the day if plans shift.</div>
 
-          <p>Comfortable shoes are a good idea &mdash; the path is grassy and may be a little uneven. The grass can be wet, so a change of shoes is wise if you're driving in.</p>
+          <p>Comfortable shoes are a good idea. The path is grassy and may be a little uneven.</p>
         </div>
       </details>
 
       <details>
-        <summary>What does the day look like?</summary>
+        <summary>What will the day look like?</summary>
         <div class="answer">
-          <p>Here's the rough flow of Saturday for guests:</p>
+          <p>Here is Saturday's timeline:</p>
           <ul class="timeline">
-            <li><span class="t">2:00pm</span><span class="e">Saturday-night overnight guests arrive &amp; settle in</span></li>
-            <li><span class="t">4:00pm</span><span class="e">Day guests arrive &mdash; head down to the plateau</span></li>
+            <li><span class="t">2:00pm</span><span class="e">Saturday night overnight guests arrive &amp; settle in</span></li>
+            <li><span class="t">4:00pm</span><span class="e">Day guests arrive. Please head down to the plateau</span></li>
             <li><span class="t">4:30pm</span><span class="e">Ceremony on the plateau</span></li>
-            <li><span class="t">5:00pm</span><span class="e">Photos &amp; mingling</span></li>
+            <li><span class="t">5:00pm</span><span class="e">Group photo &amp; Cocktail Hour</span></li>
             <li><span class="t">7:00pm</span><span class="e">Dinner</span></li>
-            <li><span class="t">8:15pm</span><span class="e">Cake &amp; champagne</span></li>
-            <li><span class="t">9:00pm</span><span class="e">First dance &amp; dancing</span></li>
+            <li><span class="t">8:15pm</span><span class="e">Cake &amp; Champagne</span></li>
+            <li><span class="t">9:00pm</span><span class="e">First dance &amp; dancing begins</span></li>
             <li><span class="t">11:30pm</span><span class="e">Late-night snack</span></li>
           </ul>
-          <p>Times are approximate &mdash; feel free to ease into the evening at your own pace.</p>
+          <p>Times are approximate.</p>
         </div>
       </details>
 
       <details>
         <summary>What about Sunday morning?</summary>
         <div class="answer">
-          <p>For everyone staying overnight, we'll have a <strong>simple breakfast of bagels, cream cheese, and coffee</strong> in the Inn's kitchen on Sunday, May 31. Come down whenever you're ready &mdash; there's no fixed time.</p>
-
-          <p>Check-out at the Portage Inn is by <strong>11:00am</strong>, so please plan to be packed up and on the road by then.</p>
+          <p>For everyone staying overnight, we'll have a <strong>simple breakfast of bagels, cream cheese, and coffee</strong> in the Inn's kitchen on Sunday, May 31. Come down whenever you're ready. There's no fixed time.</p>
         </div>
       </details>
 
@@ -491,12 +489,12 @@
         <div class="answer">
           <p>The Portage Inn has a paved parking lot on-site. A few notes:</p>
           <ul>
-            <li>Please <strong>do not park on the grassy area or the road</strong> &mdash; the road is a dangerous corner and cars there can be fined or towed.</li>
-            <li>If the lot is full, there's overflow parking on Wolf Bay Road just north of the Inn. Someone will help direct cars on the day.</li>
-            <li>Day guests: drop off any passengers at the south-side entrance first, then park.</li>
+            <li>Please <strong>do not park on the grassy area or the road</strong>. Vehicles parked on the road may be fined or towed.</li>
+            <li>If the lot is full, there's overflow parking on Wolf Bay Road just north of the Inn (Please see the Parking Guide sent by email).</li>
           </ul>
           <p>The address for your GPS is: <strong>1563 N Portage Rd, Huntsville, ON P1H 2J6</strong>.</p>
-          <p>When you arrive, head to the main entrance &mdash; someone will be there to greet you and point you in the right direction.</p>
+          <p>When you arrive as an overnight guest, head to the main entrance. Room assignments will be printed at the front desk.</p>
+          <p>When you arrive as a day-of guest, head directly to the Plateau through the back garden and down the hill. </p>
         </div>
       </details>
 
@@ -505,13 +503,13 @@
         <div class="answer">
           <p>If you're staying overnight, a few things to pack:</p>
           <ul>
-            <li><strong>Toiletries</strong> &mdash; soap, shampoo, etc. aren't provided</li>
-            <li><strong>A light jacket or sweater</strong> &mdash; Muskoka evenings can get cool, even in late May</li>
-            <li><strong>Comfortable shoes</strong> for the grass, plus a change in case the lawn is dewy</li>
-            <li><strong>Bug spray</strong> &mdash; late spring can mean mosquitoes near the lake</li>
-            <li><strong>Your phone charger</strong> and any prescription meds</li>
+            <li><strong>Toiletries</strong>: toothpaste, toothbrush, facewash, body wash, shampoo, etc.</li>
+            <li><strong>A light jacket or sweater</strong>: Muskoka evenings can get cool, even in late May.</li>
+            <li><strong>Comfortable shoes</strong> for the grass.</li>
+            <li><strong>Bug spray</strong>: late spring can mean mosquitoes near the lake.</li>
+            <li>Anything you require for a comfortable night stay. </li>
           </ul>
-          <p>Bedding (sheets, pillowcases, towels) is taken care of &mdash; you don't need to bring linens. If you'd like to take a swim or stroll down to the lake during the weekend, swimwear and a beach towel are good to pack too.</p>
+          <p>If you'd like to take a swim or stroll down to the lake during the weekend, swimwear and a beach towel are also a good idea.</p>
         </div>
       </details>
 
@@ -519,13 +517,11 @@
         <summary>Anything else I should know?</summary>
         <div class="answer">
           <ul>
-            <li><strong>Wi-Fi</strong> is available throughout the Inn &mdash; we'll share the password when you arrive.</li>
-            <li><strong>The Inn is a historic building (built in 1889)</strong>, so the floors slope a little in places &mdash; just watch your step, especially near the bottom of the main staircase.</li>
-            <li><strong>Quiet hours</strong>: by local by-law, music and loud noise needs to move indoors after 11pm. Please help us keep the neighbours happy.</li>
+            <li><strong>The Inn is a historic building (built in 1889)</strong>, so the floors slope a little in places. Please watch your step, especially near the bottom of the main staircase.</li>
+            <li><strong>Quiet hours</strong>: by local by-law, music and loud noise must move indoors after 11pm. This in no way means the party stops.</li>
             <li><strong>Smoking</strong> is not permitted inside the building.</li>
-            <li><strong>The fireplace in the Great Room is decorative only</strong> &mdash; please don't try to light it!</li>
           </ul>
-          <p>If you have any questions in the meantime &mdash; about your room, dietary needs, getting there, or anything else &mdash; please just reach out to either of us. We can't wait to see you.</p>
+          <p>If you have any questions in the meantime, please just reach out to either of us. We can't wait to see you.</p>
         </div>
       </details>
 
@@ -543,7 +539,7 @@
       <div class="footer-content">
         <p class="signoff">
           With so much love,<br>
-          <span class="names-foot">Isabel &amp; Andi</span>
+          <span class="names-foot">Andi &amp; Isabel</span>
         </p>
         <div class="address">
           The Portage Inn<br>
