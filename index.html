@@ -14,6 +14,8 @@
     --ink: #2a2a26;
     --ink-soft: #4a4136;
     --hairline: #d9c9a8;
+    --dusty-blue: #7d9bb5;
+    --dusty-blue-soft: #c1d0de;
   }
 
   * { box-sizing: border-box; }
@@ -41,7 +43,6 @@
   .header {
     position: relative;
     padding: 56px 48px 48px;
-    overflow: hidden;
     text-align: center;
   }
 
@@ -55,7 +56,7 @@
     text-transform: uppercase;
     letter-spacing: 0.28em;
     font-size: 11px;
-    color: var(--ink-soft);
+    color: var(--dusty-blue);
     margin-bottom: 18px;
     font-weight: 500;
   }
@@ -90,11 +91,17 @@
     user-select: none;
   }
 
-  .floral-header-img {
-    display: block;
-    margin: 0 auto 28px;
-    width: 280px;
-    max-width: 70%;
+  .header-floral-l {
+    top: -10px;
+    left: -10px;
+    width: 180px;
+    height: auto;
+  }
+
+  .header-flower-pink {
+    top: 138px;
+    right: 30px;
+    width: 180px;
     height: auto;
   }
 
@@ -126,7 +133,7 @@
     margin: 36px 0 8px;
     padding: 28px 30px;
     background: var(--ivory-soft);
-    border: 1px solid var(--hairline);
+    border: 1px solid var(--dusty-blue-soft);
     position: relative;
   }
 
@@ -183,9 +190,23 @@
 
   .glance .what { flex: 1; color: var(--ink); }
 
-  /* DIVIDER */
-  .divider { text-align: center; margin: 44px 0 20px; }
-  .divider img { width: 80px; height: auto; opacity: 0.85; }
+  /* DIVIDER — a row of small blue poppies */
+  .divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 18px;
+    margin: 44px 0 24px;
+    overflow: hidden;
+  }
+  .divider img {
+    display: block;
+    height: 30px;
+    width: auto;
+    flex: 0 0 auto;
+    opacity: 0.95;
+  }
 
   .qa-intro { text-align: center; margin: 12px 0 28px; }
 
@@ -279,7 +300,7 @@
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 0.14em;
-    color: var(--coral);
+    color: var(--dusty-blue);
     flex: 0 0 80px;
     text-transform: uppercase;
   }
@@ -369,20 +390,22 @@
   .footer-floral-r {
     top: -20px;
     right: -20px;
-    width: 160px;
+    width: 180px;
     height: auto;
-    transform: scaleX(-1);
   }
 
   /* MOBILE */
   @media (max-width: 560px) {
-    .header { padding: 40px 28px 36px; }
+    .header { padding: 56px 28px 36px; }
     .names { font-size: 46px; }
-    .floral-header-img { width: 200px; }
+    .header-floral-l { width: 110px; top: -6px; left: -6px; }
+    .header-flower-pink { width: 110px; top: 92px; right: 8px; }
     .content { padding: 16px 28px 20px; }
     .footer { padding: 36px 28px 44px; }
-    .footer-floral-l { width: 130px; }
-    .footer-floral-r { width: 110px; }
+    .footer-floral-l { width: 130px; bottom: -12px; left: -12px; }
+    .footer-floral-r { width: 120px; top: -12px; right: -12px; }
+    .divider { gap: 10px; margin: 32px 0 18px; }
+    .divider img { height: 22px; }
     .glance { padding: 22px 20px; }
     .glance li { flex-direction: column; gap: 4px; }
     .glance .when { flex: none; }
@@ -399,8 +422,11 @@
     <!-- ============ HEADER ============ -->
     <div class="header">
 
-      <!-- IMAGE SLOT: Centered floral above the title -->
-      <img class="floral-header-img" src="images/floral-header.png" alt="" aria-hidden="true">
+      <!-- IMAGE SLOT: top-left corner floral (cosmos) -->
+      <img class="floral header-floral-l" src="images/floral-top-left.png" alt="" aria-hidden="true">
+
+      <!-- IMAGE SLOT: pink cosmos accent, sits just below "Isabel" -->
+      <img class="floral header-flower-pink" src="images/floral-cosmos-pink.png" alt="" aria-hidden="true">
 
       <div class="header-content">
         <div class="eyebrow">A note from</div>
@@ -448,9 +474,18 @@
         </ul>
       </div>
 
-      <div class="divider">
-        <!-- IMAGE SLOT: small floral divider -->
-        <img src="images/floral-divider.png" alt="" aria-hidden="true">
+      <div class="divider" aria-hidden="true">
+        <img src="images/floral-top-left.png" alt="">
+        <img src="images/floral-top-left.png" alt="">
+        <img src="images/floral-top-left.png" alt="">
+        <img src="images/floral-top-left.png" alt="">
+        <img src="images/floral-top-left.png" alt="">
+        <img src="images/floral-top-left.png" alt="">
+        <img src="images/floral-top-left.png" alt="">
+        <img src="images/floral-top-left.png" alt="">
+        <img src="images/floral-top-left.png" alt="">
+        <img src="images/floral-top-left.png" alt="">
+        <img src="images/floral-top-left.png" alt="">
       </div>
 
       <div class="qa-intro">
@@ -568,7 +603,7 @@
       <!-- IMAGE SLOT: bottom-left floral -->
       <img class="floral footer-floral-l" src="images/floral-footer-left.png" alt="" aria-hidden="true">
 
-      <!-- IMAGE SLOT: top-right floral (mirrored via CSS transform) -->
+      <!-- IMAGE SLOT: top-right floral (blue poppy) -->
       <img class="floral footer-floral-r" src="images/floral-footer-right.png" alt="" aria-hidden="true">
 
       <div class="footer-content">

@@ -10,8 +10,10 @@
      with your actual GitHub Pages URL.
 
   2. Make sure these images exist at that URL under /images/ :
-       floral-header.png
-       floral-footer.png
+       floral-top-left.png
+       floral-cosmos-pink.png
+       floral-footer-left.png
+       floral-footer-right.png
 
   3. Make sure index.html is at the root of your GitHub Pages site
      (so the "Read full details" button links to it).
@@ -40,23 +42,41 @@
 
         <!-- ============ HEADER ============ -->
         <tr>
-          <td align="center" style="padding:48px 48px 36px;">
-            <!-- IMAGE SLOT — replace src with absolute URL once hosted -->
-            <img
-              src="https://an1ge.github.io/wedding-info/images/floral-header.png"
-              alt=""
-              width="280"
-              style="display:block; margin:0 auto 24px; width:280px; max-width:280px; height:auto; border:0; outline:none; text-decoration:none;">
+          <td style="padding:0;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <!-- IMAGE SLOT — top-left corner floral (cosmos) -->
+                <td width="130" valign="top" align="left" style="padding:0;">
+                  <img
+                    src="https://an1ge.github.io/wedding-info/images/floral-top-left.png"
+                    alt=""
+                    width="130"
+                    style="display:block; width:130px; max-width:130px; height:auto; border:0; outline:none; text-decoration:none;">
+                </td>
 
-            <div style="font-family:Helvetica, Arial, sans-serif; text-transform:uppercase; letter-spacing:0.28em; font-size:11px; color:#4a4136; margin-bottom:16px; font-weight:500;">
-              A note from
-            </div>
-            <div style="font-family:Georgia, 'Cormorant Garamond', serif; font-size:54px; font-weight:400; color:#e85a3c; line-height:1.05; text-transform:uppercase; letter-spacing:0.005em;">
-              Andi <span style="font-weight:300;">&amp;</span> Isabel
-            </div>
-            <div style="font-family:Helvetica, Arial, sans-serif; text-transform:uppercase; letter-spacing:0.22em; font-size:12px; color:#4a4136; margin-top:20px;">
-              Saturday &middot; May 30 &middot; 2026
-            </div>
+                <!-- Center stack: eyebrow + names + date -->
+                <td valign="middle" align="center" style="padding:48px 8px 36px;">
+                  <div style="font-family:Helvetica, Arial, sans-serif; text-transform:uppercase; letter-spacing:0.28em; font-size:11px; color:#7d9bb5; margin-bottom:16px; font-weight:500;">
+                    A note from
+                  </div>
+                  <div style="font-family:Georgia, 'Cormorant Garamond', serif; font-size:48px; font-weight:400; color:#e85a3c; line-height:1.05; text-transform:uppercase; letter-spacing:0.005em;">
+                    Andi <span style="font-weight:300;">&amp;</span> Isabel
+                  </div>
+                  <div style="font-family:Helvetica, Arial, sans-serif; text-transform:uppercase; letter-spacing:0.22em; font-size:12px; color:#4a4136; margin-top:20px;">
+                    Saturday &middot; May 30 &middot; 2026
+                  </div>
+                </td>
+
+                <!-- IMAGE SLOT — pink cosmos accent, bottom-aligned so it sits beside the names -->
+                <td width="130" valign="bottom" align="right" style="padding:0 0 24px 0;">
+                  <img
+                    src="https://an1ge.github.io/wedding-info/images/floral-cosmos-pink.png"
+                    alt=""
+                    width="130"
+                    style="display:block; width:130px; max-width:130px; height:auto; border:0; outline:none; text-decoration:none;">
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
 
@@ -82,7 +102,7 @@
         <!-- ============ AT A GLANCE ============ -->
         <tr>
           <td style="padding:24px 48px 8px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fbf6e9; border:1px solid #d9c9a8;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fbf6e9; border:1px solid #c1d0de;">
               <tr>
                 <td style="padding:24px 28px;">
                   <div style="font-family:Helvetica, Arial, sans-serif; text-transform:uppercase; letter-spacing:0.28em; font-size:11px; color:#e85a3c; font-weight:600; text-align:center; margin-bottom:18px;">
@@ -170,17 +190,17 @@
           <td style="background:#fbf6e9; padding:0;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
               <tr>
-                <!-- Floral image slot -->
-                <td width="160" valign="bottom" style="padding:0;">
+                <!-- IMAGE SLOT — footer left (pink poppy) -->
+                <td width="150" valign="bottom" align="left" style="padding:0;">
                   <img
-                    src="https://an1ge.github.io/wedding-info/images/floral-footer.png"
+                    src="https://an1ge.github.io/wedding-info/images/floral-footer-left.png"
                     alt=""
-                    width="160"
-                    style="display:block; width:160px; max-width:160px; height:auto; border:0; outline:none; text-decoration:none;">
+                    width="150"
+                    style="display:block; width:150px; max-width:150px; height:auto; border:0; outline:none; text-decoration:none;">
                 </td>
 
                 <!-- Sign-off -->
-                <td valign="middle" align="center" style="padding:40px 24px;">
+                <td valign="middle" align="center" style="padding:40px 12px;">
                   <p style="font-family:Georgia, 'Cormorant Garamond', serif; font-style:italic; font-size:22px; color:#2a2a26; margin:0 0 8px; line-height:1.4;">
                     With so much love,<br>
                     <span style="color:#e85a3c; font-weight:500; font-style:normal; text-transform:uppercase; letter-spacing:0.04em; font-size:18px;">Andi &amp; Isabel</span>
@@ -192,8 +212,14 @@
                   </div>
                 </td>
 
-                <!-- Right spacer column to balance the floral on the left -->
-                <td width="80" style="padding:0;">&nbsp;</td>
+                <!-- IMAGE SLOT — footer right (blue poppy) -->
+                <td width="150" valign="bottom" align="right" style="padding:0;">
+                  <img
+                    src="https://an1ge.github.io/wedding-info/images/floral-footer-right.png"
+                    alt=""
+                    width="150"
+                    style="display:block; width:150px; max-width:150px; height:auto; border:0; outline:none; text-decoration:none;">
+                </td>
               </tr>
             </table>
           </td>
