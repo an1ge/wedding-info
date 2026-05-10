@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isabel & Andi · May 30, 2026 · Wedding Weekend Overview</title>
+<meta name="description" content="Everything you need to know for our wedding weekend at the Portage Inn.">
+<style>
+  :root {
+    --ivory: #f7f1e3;
+    --ivory-soft: #fbf6e9;
+    --coral: #e85a3c;
+    --coral-deep: #c94326;
+    --ink: #2a2a26;
+    --ink-soft: #4a4136;
+    --hairline: #d9c9a8;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: #ede5d0;
+    font-family: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--ivory);
+    box-shadow: 0 4px 40px rgba(60, 50, 30, 0.12);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* HEADER */
+  .header {
+    position: relative;
+    padding: 64px 48px 56px;
+    overflow: hidden;
+  }
+
+  .header-content {
+    position: relative;
+    z-index: 2;
+    max-width: 60%;
+  }
+
+  .eyebrow {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+
+  .names {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    font-size: 68px;
+    font-weight: 400;
+    color: var(--coral);
+    margin: 0;
+    letter-spacing: 0.005em;
+    line-height: 0.95;
+    text-transform: uppercase;
+  }
+
+  .ampersand { color: var(--coral); font-weight: 300; }
+
+  .date-line {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin-top: 28px;
+  }
+
+  /* Floral image slots */
+  .floral {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    user-select: none;
+  }
+
+  .floral-tr {
+    top: -20px;
+    right: -30px;
+    width: 320px;
+    height: auto;
+  }
+
+  /* BODY */
+  .content {
+    padding: 16px 56px 24px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .greeting {
+    font-size: 19px;
+    margin: 0 0 18px;
+    color: var(--ink);
+    font-style: italic;
+  }
+
+  .summary {
+    font-size: 17px;
+    color: var(--ink-soft);
+    margin: 0 0 14px;
+    line-height: 1.7;
+  }
+
+  .summary strong { color: var(--ink); font-weight: 600; }
+
+  /* AT A GLANCE */
+  .glance {
+    margin: 36px 0 8px;
+    padding: 28px 30px;
+    background: var(--ivory-soft);
+    border: 1px solid var(--hairline);
+    position: relative;
+  }
+
+  .glance::before, .glance::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border: 1.5px solid var(--coral);
+  }
+
+  .glance::before {
+    top: -1px; left: -1px;
+    border-right: none; border-bottom: none;
+  }
+
+  .glance::after {
+    bottom: -1px; right: -1px;
+    border-left: none; border-top: none;
+  }
+
+  .glance h3 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-size: 11px;
+    color: var(--coral);
+    margin: 0 0 18px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .glance ul { margin: 0; padding: 0; list-style: none; }
+
+  .glance li {
+    padding: 10px 0;
+    display: flex;
+    gap: 18px;
+    align-items: baseline;
+    font-size: 16px;
+  }
+
+  .glance li + li { border-top: 1px dotted var(--hairline); }
+
+  .glance .when {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--coral);
+    flex: 0 0 110px;
+    font-weight: 600;
+  }
+
+  .glance .what { flex: 1; color: var(--ink); }
+
+  /* DIVIDER */
+  .divider { text-align: center; margin: 44px 0 20px; }
+  .divider img { width: 80px; height: auto; opacity: 0.85; }
+
+  .qa-intro { text-align: center; margin: 12px 0 28px; }
+
+  .qa-intro h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: var(--coral);
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  .qa-intro p {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  /* DETAILS */
+  details { border-bottom: 1px solid var(--hairline); }
+  details:first-of-type { border-top: 1px solid var(--hairline); }
+
+  summary {
+    padding: 20px 4px 20px 0;
+    cursor: pointer;
+    list-style: none;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 22px;
+    color: var(--ink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    transition: color 0.2s ease;
+  }
+
+  summary:hover { color: var(--coral); }
+  summary::-webkit-details-marker { display: none; }
+
+  summary::after {
+    content: "+";
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 26px;
+    color: var(--coral);
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+    line-height: 1;
+    width: 22px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  details[open] summary::after { content: "−"; }
+
+  .answer {
+    padding: 4px 4px 24px 0;
+    font-size: 16px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+
+  .answer p { margin: 0 0 14px; }
+  .answer p:last-child { margin-bottom: 0; }
+  .answer strong { color: var(--ink); }
+  .answer ul { margin: 8px 0 14px; padding-left: 20px; }
+  .answer li { margin-bottom: 7px; }
+
+  .answer .timeline {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+  }
+
+  .answer .timeline li {
+    padding: 10px 0;
+    border-bottom: 1px dotted var(--hairline);
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    margin: 0;
+  }
+
+  .answer .timeline li:last-child { border-bottom: none; }
+
+  .answer .timeline .t {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    color: var(--coral);
+    flex: 0 0 80px;
+    text-transform: uppercase;
+  }
+
+  .answer .timeline .e { flex: 1; color: var(--ink); font-size: 16px; }
+
+  .callout {
+    background: var(--ivory-soft);
+    border-left: 2px solid var(--coral);
+    padding: 14px 18px;
+    margin: 16px 0;
+    font-size: 15.5px;
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+
+  /* FOOTER */
+  .footer {
+    position: relative;
+    padding: 48px 48px 56px;
+    text-align: center;
+    background: var(--ivory-soft);
+    margin-top: 36px;
+    overflow: hidden;
+  }
+
+  .footer-content { position: relative; z-index: 2; }
+
+  .footer .signoff {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 26px;
+    color: var(--ink);
+    margin: 0 0 8px;
+    line-height: 1.4;
+  }
+
+  .footer .signoff .names-foot {
+    color: var(--coral);
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 22px;
+  }
+
+  .address {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-top: 20px;
+    line-height: 1.9;
+  }
+
+  .footer-floral-l {
+    bottom: -20px;
+    left: -20px;
+    width: 200px;
+    height: auto;
+  }
+
+  .footer-floral-r {
+    top: -20px;
+    right: -20px;
+    width: 160px;
+    height: auto;
+    transform: scaleX(-1);
+  }
+
+  /* MOBILE */
+  @media (max-width: 560px) {
+    .header { padding: 44px 28px 40px; }
+    .header-content { max-width: 75%; }
+    .names { font-size: 46px; }
+    .floral-tr { width: 200px; top: -10px; right: -20px; }
+    .content { padding: 16px 28px 20px; }
+    .footer { padding: 36px 28px 44px; }
+    .footer-floral-l { width: 130px; }
+    .footer-floral-r { width: 110px; }
+    .glance { padding: 22px 20px; }
+    .glance li { flex-direction: column; gap: 4px; }
+    .glance .when { flex: none; }
+    .answer .timeline li { flex-direction: column; gap: 4px; }
+    .answer .timeline .t { flex: none; }
+    summary { font-size: 19px; }
+    .qa-intro h2 { font-size: 30px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- ============ HEADER ============ -->
+    <div class="header">
+
+      <!-- IMAGE SLOT: Top-right floral cluster (large) -->
+      <img class="floral floral-tr" src="images/floral-header.png" alt="" aria-hidden="true">
+
+      <div class="header-content">
+        <div class="eyebrow">A note from the couple</div>
+        <h1 class="names">Isabel<br><span class="ampersand">&amp;</span> Andi</h1>
+        <div class="date-line">Saturday · May 30 · 2026</div>
+      </div>
+    </div>
+
+    <!-- ============ BODY ============ -->
+    <div class="content">
+
+      <p class="greeting">Dear friends and family,</p>
+
+      <p class="summary">
+        We can hardly believe how close our wedding weekend is, and we're so looking forward to celebrating with you at the Portage Inn. This page is a quick overview of what to expect &mdash; the full details are tucked into the questions below, so you can open whichever ones are useful to you.
+      </p>
+
+      <p class="summary">
+        In short: <strong>our ceremony begins at 4:30pm on Saturday, May 30, on the plateau just below the Inn.</strong> Most of you will be staying with us at the Portage Inn the night of the wedding. A small group of close family and out-of-town guests will join us starting Friday evening, and we'll have a simple breakfast together on Sunday morning before everyone heads home.
+      </p>
+
+      <div class="glance">
+        <h3>At a glance</h3>
+        <ul>
+          <li>
+            <span class="when">Fri, May 29</span>
+            <span class="what">Friday-night guests arrive from <strong>4:00pm</strong></span>
+          </li>
+          <li>
+            <span class="when">Sat, May 30</span>
+            <span class="what">Remaining overnight guests arrive by <strong>2:00pm</strong></span>
+          </li>
+          <li>
+            <span class="when">Sat, May 30</span>
+            <span class="what">Day guests arrive by <strong>4:00pm</strong> &mdash; head straight to the plateau</span>
+          </li>
+          <li>
+            <span class="when">Sat, May 30</span>
+            <span class="what"><strong>4:30pm</strong> ceremony on the plateau</span>
+          </li>
+          <li>
+            <span class="when">Sun, May 31</span>
+            <span class="what">Bagels &amp; coffee with us before you head home</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="divider">
+        <!-- IMAGE SLOT: small floral divider -->
+        <img src="images/floral-divider.png" alt="" aria-hidden="true">
+      </div>
+
+      <div class="qa-intro">
+        <h2>The Details</h2>
+        <p>Tap any question to expand</p>
+      </div>
+
+      <details>
+        <summary>When should I arrive?</summary>
+        <div class="answer">
+          <p><strong>If you're staying Friday night</strong> (close family and out-of-town guests &mdash; you know who you are): please arrive at the Portage Inn from <strong>4:00pm onward on Friday, May 29</strong>. We'll be settling in, having dinner together, and getting set up for the next day.</p>
+
+          <p><strong>If you're staying Saturday night only:</strong> please plan to arrive at the Inn by <strong>2:00pm on Saturday, May 30</strong>. This gives you time to check into your room, settle in, and be ready before the ceremony.</p>
+
+          <p><strong>If you're not staying overnight at the Inn:</strong> please arrive by <strong>4:00pm on Saturday, May 30</strong> and head straight down to the plateau (see the question below) for the ceremony at 4:30pm.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Where is the ceremony, exactly?</summary>
+        <div class="answer">
+          <p>The ceremony will take place on <strong>the plateau</strong> &mdash; a flat grassy area on the Inn's grounds, just down the hill from the lake-side terrace. It's a short, easy walk from the main building (under five minutes).</p>
+
+          <p>To get there from the Inn: walk through the Great Room out to the lake-side terrace, then follow the path down the hill. You'll see the plateau opening up below the terrace.</p>
+
+          <div class="callout">If the weather isn't cooperating, we'll move the ceremony to the terrace area near the patio. We'll let everyone know on the day if plans shift.</div>
+
+          <p>Comfortable shoes are a good idea &mdash; the path is grassy and may be a little uneven. The grass can be wet, so a change of shoes is wise if you're driving in.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What does the day look like?</summary>
+        <div class="answer">
+          <p>Here's the rough flow of Saturday for guests:</p>
+          <ul class="timeline">
+            <li><span class="t">2:00pm</span><span class="e">Saturday-night overnight guests arrive &amp; settle in</span></li>
+            <li><span class="t">4:00pm</span><span class="e">Day guests arrive &mdash; head down to the plateau</span></li>
+            <li><span class="t">4:30pm</span><span class="e">Ceremony on the plateau</span></li>
+            <li><span class="t">5:00pm</span><span class="e">Photos &amp; mingling</span></li>
+            <li><span class="t">7:00pm</span><span class="e">Dinner</span></li>
+            <li><span class="t">8:15pm</span><span class="e">Cake &amp; champagne</span></li>
+            <li><span class="t">9:00pm</span><span class="e">First dance &amp; dancing</span></li>
+            <li><span class="t">11:30pm</span><span class="e">Late-night snack</span></li>
+          </ul>
+          <p>Times are approximate &mdash; feel free to ease into the evening at your own pace.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What about Sunday morning?</summary>
+        <div class="answer">
+          <p>For everyone staying overnight, we'll have a <strong>simple breakfast of bagels, cream cheese, and coffee</strong> in the Inn's kitchen on Sunday, May 31. Come down whenever you're ready &mdash; there's no fixed time.</p>
+
+          <p>Check-out at the Portage Inn is by <strong>11:00am</strong>, so please plan to be packed up and on the road by then.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Where do I park, and where do I go when I arrive?</summary>
+        <div class="answer">
+          <p>The Portage Inn has a paved parking lot on-site. A few notes:</p>
+          <ul>
+            <li>Please <strong>do not park on the grassy area or the road</strong> &mdash; the road is a dangerous corner and cars there can be fined or towed.</li>
+            <li>If the lot is full, there's overflow parking on Wolf Bay Road just north of the Inn. Someone will help direct cars on the day.</li>
+            <li>Day guests: drop off any passengers at the south-side entrance first, then park.</li>
+          </ul>
+          <p>The address for your GPS is: <strong>1563 N Portage Rd, Huntsville, ON P1H 2J6</strong>.</p>
+          <p>When you arrive, head to the main entrance &mdash; someone will be there to greet you and point you in the right direction.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What should I bring? (overnight guests)</summary>
+        <div class="answer">
+          <p>If you're staying overnight, a few things to pack:</p>
+          <ul>
+            <li><strong>Toiletries</strong> &mdash; soap, shampoo, etc. aren't provided</li>
+            <li><strong>A light jacket or sweater</strong> &mdash; Muskoka evenings can get cool, even in late May</li>
+            <li><strong>Comfortable shoes</strong> for the grass, plus a change in case the lawn is dewy</li>
+            <li><strong>Bug spray</strong> &mdash; late spring can mean mosquitoes near the lake</li>
+            <li><strong>Your phone charger</strong> and any prescription meds</li>
+          </ul>
+          <p>Bedding (sheets, pillowcases, towels) is taken care of &mdash; you don't need to bring linens. If you'd like to take a swim or stroll down to the lake during the weekend, swimwear and a beach towel are good to pack too.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Anything else I should know?</summary>
+        <div class="answer">
+          <ul>
+            <li><strong>Wi-Fi</strong> is available throughout the Inn &mdash; we'll share the password when you arrive.</li>
+            <li><strong>The Inn is a historic building (built in 1889)</strong>, so the floors slope a little in places &mdash; just watch your step, especially near the bottom of the main staircase.</li>
+            <li><strong>Quiet hours</strong>: by local by-law, music and loud noise needs to move indoors after 11pm. Please help us keep the neighbours happy.</li>
+            <li><strong>Smoking</strong> is not permitted inside the building.</li>
+            <li><strong>The fireplace in the Great Room is decorative only</strong> &mdash; please don't try to light it!</li>
+          </ul>
+          <p>If you have any questions in the meantime &mdash; about your room, dietary needs, getting there, or anything else &mdash; please just reach out to either of us. We can't wait to see you.</p>
+        </div>
+      </details>
+
+    </div>
+
+    <!-- ============ FOOTER ============ -->
+    <div class="footer">
+
+      <!-- IMAGE SLOT: bottom-left floral -->
+      <img class="floral footer-floral-l" src="images/floral-footer-left.png" alt="" aria-hidden="true">
+
+      <!-- IMAGE SLOT: top-right floral (mirrored via CSS transform) -->
+      <img class="floral footer-floral-r" src="images/floral-footer-right.png" alt="" aria-hidden="true">
+
+      <div class="footer-content">
+        <p class="signoff">
+          With so much love,<br>
+          <span class="names-foot">Isabel &amp; Andi</span>
+        </p>
+        <div class="address">
+          The Portage Inn<br>
+          1563 N Portage Rd · Huntsville · Ontario · P1H 2J6
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
